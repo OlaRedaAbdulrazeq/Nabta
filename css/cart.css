@@ -1,0 +1,30 @@
+ .step-indicator span {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #888;
+    }
+    .step-indicator .active-step {
+      color: #6e6b40;
+      font-weight: bold;
+    }
+    .cart-box {
+      border: 1px solid #d6d6aa;
+      border-radius: 15px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .cart-item-img {
+      width: 80px;
+      border-radius: 10px;
+    }
+    .btn-custom {
+      background-color: #5a5634;
+      color: white;
+    }
+
+    input[type="text"] {
+      border: 1px solid #ccc;
+      padding: 8px;
+      border-radius: 6px;
+      width: 100%;
+    }

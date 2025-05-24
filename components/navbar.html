@@ -1,0 +1,134 @@
+
+
+  <!-- Template for navbar items (hidden) -->
+
+
+  <!-- Navbar -->
+
+            <nav class="navbar p-0">
+            <div class="container-fluid justify-content-between align-items-baseline p-0 px-lg-5">
+                <a class="navbar-brand ps-lg-4" href="#"><img src="assets/images/Nabta.png" class="img-fluid" alt="logo"></a>
+                <!-- Regular navbar items -->
+                <ul id="regular-nav" class="navbar-nav d-none d-md-flex flex-row gap-4 ">
+                    <li class="nav-item"><a class="nav-link active" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../products.html">Plants</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Design</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Garden Supplies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Giftsbouquet.html">Gifts</a></li>
+                </ul>
+
+                <ul class="d-none d-md-flex list-unstyled  pe-lg-4">
+                    <li class="nav-item">
+                     <a class="nav-link "><i class="bi bi-search"></i></a>
+                    </li>
+                    <li class="nav-item">
+                     <a class="nav-link"><i class="bi bi-basket2"></i></a>
+                    </li>
+                    <li class="nav-item">
+                     <a class="nav-link" data-bs-toggle="modal" data-bs-target="#loginModal"><i class="bi bi-person"></i></a>
+                    </li>
+                </ul>
+                <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
+                </button>
+                <div class="offcanvas offcanvas-end d-md-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header d-flex justify-content-end">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul id="offcanvas-nav" class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                         <li class="nav-item">
+                     <a class="nav-link fs-4" data-bs-toggle="modal" data-bs-target="#loginModal"><i class="bi bi-person"></i></a>
+                    </li>
+                        <li class="nav-item"><a class="nav-link active" href="../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.html#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../products.html">Plants</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Design</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Garden Supplies</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../Giftsbouquet.html">Gifts</a></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </nav>
+             <!-- Login Modal -->
+  <div class="modal fade rounded" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4">
+        <div class="modal-header border-0">
+          <h1 class="modal-title fs-4" id="loginModalLabel">Login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <form class="">
+            <div class="mb-3">
+              <label for="username" class="form-label">Username or email address</label>
+              <input type="text" class="form-control custom-input" id="username" name="username">
+            </div>
+
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control custom-input" id="password" name="password">
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="rememberMe">
+                <label class="form-check-label" for="rememberMe">Remember me</label>
+              </div>
+              <a href="#" class="forgot-link small">Forget password ?</a>
+            </div>
+            <div class="mt-3 text-center">
+              <span class="small-link" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#registerModal">Don't have an account? Register now</span>
+            </div>
+            <div class="text-end">
+              <button type="submit" class="btn btn-login">Log In</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Register Modal -->
+  <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4">
+        <div class="modal-header border-0">
+          <h1 class="modal-title fs-4" id="registerModalLabel">Register</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="register-username" class="form-label">Username</label>
+              <input type="text" class="form-control custom-input" id="register-username" name="username">
+            </div>
+
+            <div class="mb-3">
+              <label for="register-email" class="form-label">Email address</label>
+              <input type="email" class="form-control custom-input" id="register-email" name="email">
+            </div>
+
+            <div class="mb-3">
+              <label for="register-password" class="form-label">Password</label>
+              <input type="password" class="form-control custom-input" id="register-password" name="password">
+            </div>
+
+            <div class="form-check mb-4">
+              <input class="form-check-input" type="checkbox" id="subscribe">
+              <label class="form-check-label" for="subscribe">Subscribe to our newsletter</label>
+            </div>
+
+            <div class="text-end">
+              <button type="submit" class="btn btn-register">Register</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+

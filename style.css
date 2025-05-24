@@ -1,0 +1,199 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    color: #4d4b1f;
+}
+a {
+ text-decoration: none;
+ color: #4d4b1f;
+} 
+a:hover {
+    color: black;
+}
+ul {
+    list-style: none;
+}
+body {
+    margin: 0 ;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif !important;
+    overflow-x: hidden;
+}
+.philosopher {
+    font-family: 'Philosopher', sans-serif;
+     color: #4d4b1f;
+}
+
+header{
+    background-color: rgba(255, 255, 255, 0.568);
+}
+header a {
+    color: black !important;
+}
+img[alt="logo"]{
+    height: 80px;
+}
+@media screen and (max-width:700px){
+    img[alt="logo"]{
+    height: 65px;
+}
+}
+
+
+.hero-section {
+    /* I'd like to make background fit in all screens and the vertical white gap disappears */
+     background: url('assets/images/backgrounFlower.png') center/cover no-repeat;
+     min-height: 100vh;
+      /* height: 100vh; */
+      text-align: center;
+}
+.main-head {
+  font-weight: 700;
+}
+/* @media screen and (max-width: 425px){
+    .hero-section  {
+        background-image: url("./Images/backgrounFlower.png");
+    }
+} */
+
+.hero-section  .hero-content {
+    color: #4d4b1f;
+   transform: translateY(120%);
+   flex-shrink: 1;
+
+}
+@media screen and (max-width: 694px){
+    .hero-section  .hero-content {
+         transform: translateY(110%);
+    }
+}
+@media screen and (max-width: 450px){
+    .hero-section  .hero-content {
+         transform: translateY(110%);
+    }
+    .lead {
+        font-size:1.2rem;
+    }
+}
+@media screen and (max-width: 435px){
+    .hero-section  .hero-content {
+         transform: translateY(100%);
+    }
+    .lead {
+        font-size:1.2rem;
+    }
+}
+@media screen and (max-width: 276px){
+     .hero-section  .hero-content {
+         transform: translateY(70%);
+    }
+   .main-head {
+    font-size: 1.5rem;
+   }
+    .lead {
+        font-size:1rem;
+    }
+}
+@media screen and (max-width: 435px){
+    .hero-section  .hero-content {
+         transform: translateY(100%);
+    }
+    .lead {
+        font-size:1.2rem;
+    }
+}
+
+
+    .features-section {
+    background:linear-gradient(to bottom, 
+              rgb(202 228 227) 15%,    /* start color */
+              #FFF 21%,   /* color stops at 10% */
+                             /* white starts exactly at 10% */
+              #FFF 100%);  
+    }
+.best-seller .card{
+    border-radius: 4rem;
+}
+.why-us h2{
+    padding: 8rem 0;
+}
+.why-div {
+    position:relative;
+    z-index: 100;
+}
+.mb-10 {
+    margin-bottom:12rem;
+}
+.why-div h4::before {
+    content: attr(data-number);
+     font-family: 'Philosopher', sans-serif;
+    position: absolute;
+    top: -77px; 
+    font-size: 10rem;
+    color: rgba(221, 235, 234, 1);
+    z-index: -1;
+}
+@media screen and (max-width: 755px){
+    .why-div h4::before {
+        display: none;
+    }
+}
+
+.img-div {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-30%);
+}    
+img[alt="rose"]{
+        height: 33rem;
+}
+.about {
+    margin-left: 10rem;
+}
+@media screen and (max-width: 752px){
+.about {
+    margin-left: 0;
+}
+}
+img[alt="flower-box"]{
+    height: 30rem;
+}
+box-img {
+    margin-left: 3rem;
+}
+img[alt="vase-flower"]{
+    height: 20rem;
+}
+img[alt="special-flower"]{
+     height: 30rem;
+}
+.view-more {
+    background-color: #4d4b1f;
+    color: white;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+.view-more:hover {
+    cursor: pointer;
+}
+footer {
+      padding: 0 20px;
+}
+footer  a {
+ text-decoration: none;
+ color: #4d4b1f;
+}
+.footer-links, .newsletter {
+      font-size: 14px;
+}
+.btn-signup {
+      background-color: #4a4a1c;
+      color: white;
+}
+img[alt="valu"]{
+    width: 6rem;
+    height: 3rem; 
+}
+/* Modal part */

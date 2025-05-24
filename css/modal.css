@@ -1,0 +1,23 @@
+.custom-input {
+      border-radius: 15px;
+      border: 1px solid #4c4b0b !important;
+    }
+
+    .modal-content {
+      border-radius: 30px;
+      border: 1px solid #4c4b0b;
+    }
+
+    .form-label, .form-check-label, .forgot-link {
+      color: #4c4b0b;
+    }
+
+    .btn-login {
+      background-color: #4c4b0b;
+      color: white;
+      border-radius: 10px;
+    }
+
+    .btn-login:hover {
+      background-color: #3c3b09;
+    }
