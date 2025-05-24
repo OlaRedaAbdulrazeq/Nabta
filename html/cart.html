@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cart - NABTA</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+
+<header id="navbar-placeholder"></header>
+<!-- Step Indicator -->
+<div class="container mt-5">
+  <div class="d-flex justify-content-start align-items-center gap-3 step-indicator">
+    <span class="active-step">1 Cart</span>
+    <span>2 Delivery & Payment</span>
+    <span>3 Complete Order</span>
+  </div>
+
+  <!-- Cart Item -->
+  <div class="cart-box mt-4">
+    <div class="d-flex justify-content-between align-items-center flex-wrap">
+      <div class="d-flex align-items-center gap-3">
+        <img src="assets/images/boo3.png" alt="bouquet" class="cart-item-img" />
+        <div>
+          <p class="mb-0">30 Esperance | Pink wrap</p>
+          <small>1400 L.E</small>
+        </div>
+      </div>
+      <div>
+        <select class="form-select w-auto">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- Message and Coupon -->
+  <div class="d-flex flex-column mb-4">
+    <div class="col-md-6 mb-3">
+      <input type="text" placeholder="Your Message Card :" />
+    </div>
+    <div class="col-md-6 d-flex align-items-center">
+      <input type="text" placeholder="Coupon Code" class="me-2" />
+      <span class="w-25 ms-3 cursor-pointer">Apply Coupon</span>
+    </div>
+  </div>
+
+  <!-- Cart Total -->
+    <h3 class="mb-4">Cart Total</h3>
+  <div class="cart-box">
+   
+    <div class="d-flex justify-content-between">
+      <span >Subtotal</span>
+      <span class="justify-self-start">1400 L.E</span>
+    
+    </div>
+    <hr>
+    <div class="d-flex justify-content-between">
+    <p>Shipping</p>
+    <div class="mb-3">
+        
+      <label class="form-check-label">
+        <input class="form-check-input" type="radio" name="shipping" checked> Shipping : 50 L.E
+      </label>
+      <br />
+      <br>
+      <label class="form-check-label">
+        <input class="form-check-input" type="radio" name="shipping"> Pickup From Store
+      </label>
+    </div>
+    </div>
+    <hr>
+
+    <div class="d-flex justify-content-between">
+      <strong>Total</strong>
+      <strong>1450 L.E</strong>
+    </div>
+  </div>
+
+<!-- Buttons -->
+<div class="mt-4 mb-5 d-flex flex-column flex-md-row gap-3 ">
+  <a href="products.html" class="btn btn-custom w-100 w-md-auto">Continue Shopping</a>
+  <a href="#" class="btn btn-custom w-100 w-md-auto px-md-5">Checkout</a>
+</div>
+
+</div>
+
+<footer id="footer-placeholder"></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="cart.js" type="module"></script>
+</body>
+</html>
